@@ -1,8 +1,10 @@
+<h2>Products</h2>
 <ul class="products-page">
   <% @products.each do |product| %>
-      <li><%= product.name %></li>
+      <strong><li><%= product.name %></li></strong>
       <li><%= image_tag product.image.url(:medium) %></li>
+      <h3>Description</h3>
       <li><%= product.description %></li>
-      <strong><li><span class="price">$<%= product.price %></span></li></strong>
+      <strong><li>Member price: <span class="price"><%= number_to_currency product.price %></span></li></strong>
   <% end %>
 </ul>
