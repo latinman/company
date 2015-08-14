@@ -1,0 +1,40 @@
+<footer>
+  <div class="row">
+    <div class="col-md-6">
+      <ul class="footer-nav">
+        <li><%= link_to "About", about_path %></li>
+        <li><%= link_to "Privacy Policy", "#" %></li>
+        <li><%= link_to "Contact Us", "#" %></li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <ul class="social-icons">
+        <li>
+          <%= link_to "http://www.facebook.com" do %>
+              <i class="ion-social-facebook"></i>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to "http://www.twitter" do %>
+              <i class="ion-social-twitter"></i>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to "http://www.googleplus.com" do %>
+              <i class="ion-social-googleplus"></i>
+          <% end %>
+        </li>
+        <li>
+          <%= link_to "http://www.instagram.com" do %>
+              <i class="ion-social-instagram"></i>
+          <% end %>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="row">
+    <p>
+      Copyright &copy; tinito <%= Time.now.strftime("%Y") %>. All rights reserved.
+    </p>
+  </div>
+</footer>
