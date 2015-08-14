@@ -18,5 +18,7 @@ group :development, :test do
   gem 'bootstrap-sass', '~> 3.3.5.1'
   gem 'ionicons-rails'
   gem 'font-awesome-sass', '~> 4.3.0'
+  gem 'stripe'
+  gem 'paperclip', '~> 4.3'
 end
 
