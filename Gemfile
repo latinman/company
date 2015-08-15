@@ -20,5 +20,6 @@ group :development, :test do
   gem 'font-awesome-sass', '~> 4.3.0'
   gem 'stripe'
   gem 'paperclip', '~> 4.3'
+  gem 'figaro', '~> 1.1.1'
 end
 
