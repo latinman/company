@@ -1,4 +1,5 @@
 class ProductsController < ApplicationController
+  before_filter :find_products, only: [:edit, :update, :show]
 
   def index
     @products = Product.all
@@ -24,12 +25,9 @@ class ProductsController < ApplicationController
   end
 
   def edit
-    @product = Product.find(params[:id])
   end
 
   def update
-    @product = Product.find(params[:id])
-
     if @product.update(product_params)
       flash[:success] = "Product updated!"
       redirect_to products_path
@@ -43,6 +41,10 @@ class ProductsController < ApplicationController
 
   def product_params
     params.require(:product).permit(:name, :description, :price, :image)
+  end
+
+  def find_products
+    @product = Product.find(params[:id])
   end
 
 end
