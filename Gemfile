@@ -18,7 +18,7 @@ group :development, :test do
   gem 'bootstrap-sass', '~> 3.3.5.1'
   gem 'ionicons-rails'
   gem 'font-awesome-sass', '~> 4.3.0'
-  gem 'stripe'
+  gem 'stripe', :git => 'https://github.com/stripe/stripe-ruby'
   gem 'paperclip', '~> 4.3'
   gem 'figaro', '~> 1.1.1'
 end
